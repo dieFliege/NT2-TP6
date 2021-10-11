@@ -19,6 +19,30 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
+  {
+    path: "/nt2",
+    name: "Nt2",
+    component: () =>
+      import(/* webpackChunkName: "nt2" */ "../views/Nt2.vue"),
+  },
+  {
+    path: "/tp2",
+    name: "Tp2",
+    component: () =>
+      import(/* webpackChunkName: "tp2" */ "../views/Tp2.vue"),
+  },
+  {
+    path: "/pr2",
+    name: "Pr2",
+    component: () =>
+      import(/* webpackChunkName: "pr2" */ "../views/Pr2.vue"),
+  },
+  {
+    path: '/alumnos/:id',
+    name: 'alumnos',
+    component: () =>
+      import(/* webpackChunkName: "alumnos" */ "../views/Alumnos.vue"),
+  }
 ];
 
 const router = new VueRouter({
